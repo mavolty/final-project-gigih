@@ -6,4 +6,8 @@ RSpec.describe Customer, type: :model do
     it { should validate_uniqueness_of(:email) }
     it { should_not allow_value('invalid_email').for(:email) }
   end
+
+  describe 'associations' do
+    it { should have_many(:orders).dependent(:destroy) }
+  end
 end

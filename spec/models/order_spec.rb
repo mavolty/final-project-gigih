@@ -15,4 +15,10 @@ RSpec.describe Order, type: :model do
       it { should validate_inclusion_of(:status).in_array(%w(new paid cancelled)) }
     end
   end
+
+  describe 'associations' do
+    describe '#customer' do
+      it { should belong_to(:customer) }
+    end
+  end
 end

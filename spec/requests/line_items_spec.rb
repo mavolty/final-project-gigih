@@ -74,4 +74,20 @@ RSpec.describe 'LineItems', type: :request do
       end
     end
   end
+
+  describe 'PUT /api/v1/line_items/:id' do
+    let(:valid_attributes) { { quantity: 2 } }
+
+    context 'when the record exists' do
+      before { put "/api/v1/line_items/#{line_item_id}", params: valid_attributes }
+
+      it 'updates the record' do
+        expect(response.body).to be_empty
+      end
+
+      it 'returns status code 204' do
+        expect(response).to have_http_status(204)
+      end
+    end
+  end
 end

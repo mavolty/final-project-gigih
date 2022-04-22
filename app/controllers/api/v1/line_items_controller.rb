@@ -42,6 +42,18 @@ module Api
         @line_item = LineItem.create!(line_item_params)
         render json: @line_item, status: :created
       end
+
+      def update
+        @line_item = LineItem.find(params[:id])
+        @line_item.update(line_item_params)
+        head :no_content
+      end
+
+      private
+
+      def line_item_params
+        params.permit(:order_id, :menu_id, :quantity)
+      end
     end
   end
 end

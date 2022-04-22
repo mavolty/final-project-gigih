@@ -58,5 +58,18 @@ RSpec.describe 'Orders', type: :request do
         expect(response).to have_http_status(201)
       end
     end
+
+    context 'when the request is invalid' do
+      before { post '/api/v1/orders', params: { order_date: nil } }
+
+      it 'returns status code 404' do
+        expect(response).to have_http_status(404)
+      end
+
+      it 'returns a validation failure message' do
+        expect(response.body)
+          .to match(/Couldn't find/)
+      end
+    end
   end
 end

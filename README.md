@@ -1,4 +1,5 @@
 # Generasi GIGIH Final Project Backend: Simple Ecommerce API
+
 ![](https://github.com/mavolty/final-project-gigih/blob/main/app/assets/images/generasi-gigih.png)
 This repo contains code for generasi GIGIH Final Project in the Backend track. The problem for this project is to make an API for simple ecommerce. Like other ecommerce app, admin can create new menu with categories, also customers can order the menu and many details for the API you can see in the API documentation.
 
@@ -11,6 +12,13 @@ This template was generated using `rails new` (after you install the `rails` gem
 - bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
 - allow `*.repl.co` hosts (see `config/environments/development.rb`)
 - allow the app to be iframed on `replit.com` (see `config/application.rb`)
+
+## API Documentation
+
+to test endpoint you can go to API documentation and import the url from there or you can import the collection from exported collection in `postman` folder.
+I create API documentation with postman API documentation tool. You can visit the link below to see the detail about API
+
+[API Documentation](https://documenter.getpostman.com/view/19478600/UyrAFcwr)
 
 ## Clone the repository
 
@@ -40,6 +48,7 @@ bundle install
 ```
 
 ## Migrate database
+
 ```sh
 rails db:migrate
 ```
@@ -47,13 +56,7 @@ rails db:migrate
 ## Test
 
 to run the test you can run by command below. (actually i prefer to use format document in rspec)
+
 ```sh
 bundle exec rspec -fd
 ```
-to test endpoint you can go to API documentation and import the url from there or you can import the collection from exported collection in `postman` folder.
-
-## API Documentation
-
-I create API documentation with postman API documentation tool. You can visit the link below to see the detail about API
-
-[API Documentation](https://documenter.getpostman.com/view/19478600/UyrAFcwr)

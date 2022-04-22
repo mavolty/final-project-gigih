@@ -74,4 +74,16 @@ RSpec.describe 'Menus API', type: :request do
       end
     end
   end
+
+  describe 'PUT /api/v1/menus/:id' do
+    let(:valid_attributes) { { name: 'My Menu', description: 'My Description', price: 5_000.0 } }
+
+    context 'when the record exists' do
+      before { put "/api/v1/menus/#{menu_id}", params: valid_attributes }
+
+      it 'updates the record' do
+        expect(response.body).to be_empty
+      end
+    end
+  end
 end

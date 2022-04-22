@@ -20,6 +20,11 @@ module Api
         end
       end
 
+      def update
+        @menu = Menu.find(params[:id])
+        @menu.update(menu_params)
+      end
+
       private
 
       def menu_params

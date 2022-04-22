@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :menus, only: %i[index show create update destroy]
       resources :categories, only: %i[index show create update destroy]
+      resources :menu_categories, only: %i[index create update destroy]
+      get 'menu_categories/:menu_id', to: 'menu_categories#show'
     end
   end
 end

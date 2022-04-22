@@ -1,6 +1,5 @@
 FactoryBot.define do
   factory :category do
-    name { Faker::Food.ethnic_category[2..49] }
-    association :menu
+    name { Faker::Name.unique.name[2..49] }
   end
 end

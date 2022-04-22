@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :orders, only: %i[index show create update destroy]
       resources :line_items, only: %i[index create update destroy]
       get 'line_items/:customer_id', to: 'line_items#show'
+      get 'reports', to: 'reports#index'
     end
   end
 end

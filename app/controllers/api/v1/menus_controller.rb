@@ -5,6 +5,11 @@ module Api
         @menus = Menu.all
         render json: @menus, status: :ok
       end
+
+      def show
+        @menu = Menu.find(params[:id])
+        render json: @menu
+      end
     end
   end
 end

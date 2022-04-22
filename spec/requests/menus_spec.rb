@@ -16,4 +16,15 @@ RSpec.describe 'Menus API', type: :request do
       expect(response).to have_http_status(200)
     end
   end
+
+  describe 'GET /api/v1/menus/:id' do
+    before { get "/api/v1/menus/#{menu_id}" }
+
+    context 'when the record exists' do
+      it 'returns the menu' do
+        expect(json).not_to be_empty
+        expect(json['id']).to eq(menu_id)
+      end
+    end
+  end
 end

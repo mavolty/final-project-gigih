@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "d694559d-53d0-4778-8c82-da84f12ecbbc",
+		"name": "Gigih",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "List all menus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menus",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show menu detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menus/3",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus", "3"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ketoprak",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Ketoprak Pedes Gila",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "12000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menus",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit existing menu",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "price",
+									"value": "10000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menus/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete menu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menus/2",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus", "2"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "List all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/categories",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "categories"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show category detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/categories/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "categories", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Makanan Penutup",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/categories",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "categories"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit existing category",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Makanan Pembuka",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menus/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menus/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menus", "1"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu Category",
+			"item": [
+				{
+					"name": "List all menu categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menu_categories",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menu_categories"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show categories in menu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/menu_categories/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menu_categories", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add categories to menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menu_categories",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menu_categories"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit menu categories",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menu_categories/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menu_categories", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete menu categories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/menu_categories/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "menu_categories", "1"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Line Item",
+			"item": [
+				{
+					"name": "List all line items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/line_items",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "line_items"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show customer line items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/line_items/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "line_items", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new line item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/line_items",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "line_items"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit order detail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/line_items/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "line_items", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete line item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/line_items/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "line_items", "1"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "List all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "orders"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show order detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "orders", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "orders"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit existing order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "{{NEW}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "orders", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "orders", "1"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "List all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/customers",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "customers"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show detail customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/customers/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "customers", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ucok@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/customers",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "customers"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "mahmud@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/customers/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "customers", "1"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/customers/1",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "customers", "1"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "Daily report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/reports",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["api", "v1", "reports"]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "NEW",
+			"value": "new"
+		},
+		{
+			"key": "PAID",
+			"value": "paid",
+			"type": "string"
+		},
+		{
+			"key": "CANCELED",
+			"value": "canceled",
+			"type": "string"
+		}
+	]
+}

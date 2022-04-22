@@ -3,7 +3,7 @@ module Api
     class MenusController < ApplicationController
       def index
         @menus = Menu.all
-        render json: @menus
+        render json: @menus, status: :ok
       end
     end
   end

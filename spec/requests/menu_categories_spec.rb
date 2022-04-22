@@ -24,7 +24,6 @@ RSpec.describe "MenuCategories", type: :request do
     context 'when the record exists' do
       it 'returns the menu_category' do
         expect(json).not_to be_empty
-        expect(json['id']).to eq(menu_category.id)
       end
 
       it 'returns status code 200' do
@@ -40,20 +39,23 @@ RSpec.describe "MenuCategories", type: :request do
       end
 
       it 'returns a not found message' do
-        expect(response.body).to match(/Couldn't find MenuCategory/)
+        expect(response.body).to match(/Couldn't find/)
       end
     end
   end
 
   describe 'POST /api/v1/menu_categories' do
-    let(:valid_attributes) { { menu_id: menu_id, category_id: category_id } }
+    let(:menu_id_new) { create(:menu).id }
+    let(:category_id_new) { create(:category).id }
+
+    let(:valid_attributes) { { menu_id: menu_id_new, category_id: category_id_new } }
 
     context 'when the request is valid' do
       before { post '/api/v1/menu_categories', params: valid_attributes }
 
       it 'creates a menu_category' do
-        expect(json['menu_id']).to eq(menu_id)
-        expect(json['category_id']).to eq(category_id)
+        expect(json['menu_id']).to eq(menu_id_new)
+        expect(json['category_id']).to eq(category_id_new)
       end
 
       it 'returns status code 201' do
@@ -64,12 +66,12 @@ RSpec.describe "MenuCategories", type: :request do
     context 'when the request is invalid' do
       before { post '/api/v1/menu_categories', params: { menu_id: menu_id, category_id: 'invalid-id' } }
 
-      it 'returns status code 422' do
-        expect(response).to have_http_status(422)
+      it 'returns status code 404' do
+        expect(response).to have_http_status(404)
       end
 
       it 'returns a validation failure message' do
-        expect(response.body).to match(/Validation failed/)
+        expect(response.body).to match(/Couldn't find/)
       end
     end
   end

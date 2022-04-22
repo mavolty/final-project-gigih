@@ -23,6 +23,7 @@ module Api
       def update
         @menu = Menu.find(params[:id])
         @menu.update(menu_params)
+        head :no_content
       end
 
       private

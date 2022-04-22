@@ -14,7 +14,7 @@ module Api
       end
 
       def create
-        @order = Order.new(order_params) 
+        @order = Order.new(order_params)
         @order.customer = Customer.find(params[:customer_id])
 
         if @order.save
@@ -28,6 +28,19 @@ module Api
         @order = Order.find(params[:id])
         @order.update(order_params)
         head :no_content
+      end
+
+
+      def destroy
+        @order = Order.find(params[:id])
+        @order.destroy
+        head :no_content
+      end
+
+      private
+
+      def order_params
+        params.permit(:order_date, :status, :quantity)
       end
     end
   end

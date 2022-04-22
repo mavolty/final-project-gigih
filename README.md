@@ -1,4 +1,8 @@
-# Rails on Replit
+# Generasi GIGIH Final Project Backend: Simple Ecommerce API
+![](https://github.com/mavolty/final-project-gigih/blob/main/app/assets/images/generasi-gigih.png)
+This repo contains code for generasi GIGIH Final Project in the Backend track. The problem for this project is to make an API for simple ecommerce. Like other ecommerce app, admin can create new menu with categories, also customers can order the menu and many details for the API you can see in the API documentation.
+
+## Rails on Replit
 
 This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
 
@@ -8,18 +12,48 @@ This template was generated using `rails new` (after you install the `rails` gem
 - allow `*.repl.co` hosts (see `config/environments/development.rb`)
 - allow the app to be iframed on `replit.com` (see `config/application.rb`)
 
-## Running the app
+## Clone the repository
 
-Simple hit run! You can edit the run command from the `.replit` file.
+```shell
+git clone https://github.com/mavolty/final-project-gigih.git
+cd final-project-gigih
+```
 
-## Running commands
+## Check your Ruby version
 
-Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
+```shell
+ruby -v
+```
 
-## Database
+The ouput should start with something like `ruby 2.5.1`
 
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
+If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
 
-## Help
+```shell
+rbenv install 2.5.1
+```
 
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Alternatively you can [ask in the community](https://replit.com/talk/ask). Feel free to report bugs [here](https://replit.com/bugs) and give us feedback [here](https://Replit/feedback).
+## Install dependencies
+
+```sh
+bundle install
+```
+
+## Migrate database
+```sh
+rails db:migrate
+```
+
+## Test
+
+to run the test you can run by command below. (actually i prefer to use format document in rspec)
+```sh
+bundle exec rspec -fd
+```
+to test endpoint you can go to API documentation and import the url from there or you can import the collection from exported collection in `postman` folder.
+
+## API Documentation
+
+I create API documentation with postman API documentation tool. You can visit the link below to see the detail about API
+
+[API Documentation](https://documenter.getpostman.com/view/19478600/UyrAFcwr)

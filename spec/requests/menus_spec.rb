@@ -30,5 +30,13 @@ RSpec.describe 'Menus API', type: :request do
         expect(response).to have_http_status(200)
       end
     end
+
+    context 'when the record does not exist' do
+      let(:menu_id) { 'invalid-id' }
+
+      it 'returns status code 404' do
+        expect(response).to have_http_status(404)
+      end
+    end
   end
 end

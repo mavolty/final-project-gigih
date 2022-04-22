@@ -15,4 +15,9 @@ RSpec.describe LineItem, type: :model do
       it { should validate_numericality_of(:quantity).only_integer }
     end
   end
+
+  describe 'associations' do
+    it { should belong_to(:order) }
+    it { should belong_to(:menu) }
+  end
 end

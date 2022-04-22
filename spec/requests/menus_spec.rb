@@ -60,5 +60,13 @@ RSpec.describe 'Menus API', type: :request do
         expect(response).to have_http_status(201)
       end
     end
+
+    context 'when the request is invalid' do
+      before { post '/api/v1/menus', params: { name: 'My Menu' } }
+
+      it 'returns status code 422' do
+        expect(response).to have_http_status(422)
+      end
+    end
   end
 end

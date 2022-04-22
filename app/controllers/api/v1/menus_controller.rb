@@ -12,12 +12,8 @@ module Api
       end
 
       def create
-        @menu = Menu.new(menu_params)
-        if @menu.save
-          render json: @menu, status: :created
-        else
-          render json: @menu.errors, status: :unprocessable_entity
-        end
+        @menu = Menu.create!(menu_params)
+        render json: @menu, status: :created
       end
 
       def update

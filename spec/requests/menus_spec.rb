@@ -69,8 +69,7 @@ RSpec.describe 'Menus API', type: :request do
       end
 
       it 'returns a validation failure message' do
-        expect(response.body).to match(/can't be blank/)
-        expect(response.body).to match(/is not a number/)
+        expect(response.body).to match(/Validation failed/)
       end
     end
   end

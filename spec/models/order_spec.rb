@@ -20,6 +20,7 @@ RSpec.describe Order, type: :model do
     describe '#customer' do
       it { should belong_to(:customer) }
       it { should have_many(:line_items).dependent(:destroy) }
+      it { should have_many(:menus).through(:line_items) }
     end
   end
 end

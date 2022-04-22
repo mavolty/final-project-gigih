@@ -12,5 +12,9 @@ RSpec.describe Menu, type: :model do
     describe '#description' do
       it { should validate_length_of(:description).is_at_most(150) }
     end
+
+    describe '#price' do
+      it { should validate_presence_of(:price) }
+    end
   end
 end

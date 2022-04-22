@@ -73,4 +73,20 @@ RSpec.describe "MenuCategories", type: :request do
       end
     end
   end
+
+  describe 'PUT /api/v1/menu_categories/:menu_id' do
+    let(:valid_attributes) { { menu_id: menu_id, category_id: category_id } }
+
+    context 'when the record exists' do
+      before { put "/api/v1/menu_categories/#{menu_category.id}", params: valid_attributes }
+
+      it 'updates the record' do
+        expect(response.body).to be_empty
+      end
+
+      it 'returns status code 204' do
+        expect(response).to have_http_status(204)
+      end
+    end
+  end
  end

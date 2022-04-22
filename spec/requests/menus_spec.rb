@@ -62,10 +62,15 @@ RSpec.describe 'Menus API', type: :request do
     end
 
     context 'when the request is invalid' do
-      before { post '/api/v1/menus', params: { name: 'My Menu' } }
+      before { post '/api/v1/menus', params: { name: nil, description: 'My Description', price: 'not a number' } }
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)
+      end
+
+      it 'returns a validation failure message' do
+        expect(response.body).to match(/can't be blank/)
+        expect(response.body).to match(/is not a number/)
       end
     end
   end

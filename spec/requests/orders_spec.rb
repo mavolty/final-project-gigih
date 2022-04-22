@@ -72,4 +72,20 @@ RSpec.describe 'Orders', type: :request do
       end
     end
   end
+
+  describe 'PUT /api/v1/orders/:id' do
+    let(:valid_attributes) { { order_date: Date.today, status: 'new', customer_id: 1 } }
+
+    context 'when the record exists' do
+      before { put "/api/v1/orders/#{order_id}", params: valid_attributes }
+
+      it 'updates the record' do
+        expect(response.body).to be_empty
+      end
+
+      it 'returns status code 204' do
+        expect(response).to have_http_status(204)
+      end
+    end
+  end
 end

@@ -23,6 +23,12 @@ module Api
           render json: @order.errors, status: :unprocessable_entity
         end
       end
+
+      def update
+        @order = Order.find(params[:id])
+        @order.update(order_params)
+        head :no_content
+      end
     end
   end
 end

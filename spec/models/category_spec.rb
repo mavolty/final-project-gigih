@@ -12,5 +12,6 @@ RSpec.describe Category, type: :model do
 
   describe 'associations' do
     it { should have_many(:menu_categories) }
+    it { should have_many(:menus).through(:menu_categories) }
   end
 end

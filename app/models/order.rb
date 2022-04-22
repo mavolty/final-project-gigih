@@ -3,6 +3,7 @@ class Order < ApplicationRecord
   PAID = 'paid'.freeze
   CANCELLED = 'cancelled'.freeze
 
+  has_many :line_items, dependent: :destroy
   belongs_to :customer
 
   validates :order_date, presence: true

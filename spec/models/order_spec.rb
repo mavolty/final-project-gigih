@@ -19,6 +19,7 @@ RSpec.describe Order, type: :model do
   describe 'associations' do
     describe '#customer' do
       it { should belong_to(:customer) }
+      it { should have_many(:line_items).dependent(:destroy) }
     end
   end
 end

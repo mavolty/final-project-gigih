@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "MenuCategories", type: :request do
+RSpec.describe "Menu Categories API", type: :request do
   let!(:menu_category) { create(:menu_category) }
   let(:menu_id) { menu_category.menu.id }
   let(:category_id) { menu_category.category.id }

@@ -90,4 +90,13 @@ RSpec.describe 'LineItems', type: :request do
       end
     end
   end
+
+  describe 'DELETE /api/v1/line_items/:id' do
+    before { delete "/api/v1/line_items/#{line_item_id}" }
+
+    it 'returns status code 204' do
+      expect(response).to have_http_status(204)
+    end
+  end
+
 end

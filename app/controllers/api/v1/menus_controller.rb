@@ -1,6 +1,8 @@
 module Api
   module V1
     class MenusController < ApplicationController
+      skip_before_action :verify_authenticity_token
+
       def index
         @menus = Menu.all
         render json: @menus, status: :ok

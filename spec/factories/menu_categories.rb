@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :menu_category do
-    association :menu
-    association :category
+    menu { build(:menu) }
+    category { build(:category) }
   end
 end

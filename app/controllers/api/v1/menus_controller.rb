@@ -10,6 +10,19 @@ module Api
         @menu = Menu.find(params[:id])
         render json: @menu, status: :ok
       end
+
+      def create
+        @menu = Menu.new(menu_params)
+        if @menu.save
+          render json: @menu
+        end
+      end
+
+      private
+
+      def menu_params
+        params.permit(:name, :description, :price)
+      end
     end
   end
 end

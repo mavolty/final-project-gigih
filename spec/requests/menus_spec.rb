@@ -43,4 +43,18 @@ RSpec.describe 'Menus API', type: :request do
       end
     end
   end
+
+  describe 'POST /api/v1/menus' do
+    let(:valid_attributes) { { name: 'My Menu', description: 'My Description', price: 5_000.0 } }
+
+    context 'when the request is valid' do
+      before { post '/api/v1/menus', params: valid_attributes }
+
+      it 'creates a menu' do
+        expect(json['name']).to eq('My Menu')
+        expect(json['description']).to eq('My Description')
+        expect(json['price']).to eq(5_000.0)
+      end
+    end
+  end
 end

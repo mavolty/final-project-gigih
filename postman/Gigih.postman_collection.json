@@ -15,9 +15,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menus",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus"]
+							"path": [
+								"api",
+								"v1",
+								"menus"
+							]
 						}
 					},
 					"response": []
@@ -29,9 +35,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menus/3",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus", "3"]
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"3"
+							]
 						}
 					},
 					"response": []
@@ -46,26 +59,32 @@
 							"urlencoded": [
 								{
 									"key": "name",
-									"value": "Ketoprak",
+									"value": "Nasi Uduk",
 									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "Ketoprak Pedes Gila",
+									"value": "Nasi Uduk Sambel Kerupuk",
 									"type": "text"
 								},
 								{
 									"key": "price",
-									"value": "12000",
+									"value": "6000",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menus",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus"]
+							"path": [
+								"api",
+								"v1",
+								"menus"
+							]
 						}
 					},
 					"response": []
@@ -80,16 +99,23 @@
 							"urlencoded": [
 								{
 									"key": "price",
-									"value": "10000",
+									"value": "12000",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menus/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -101,9 +127,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menus/2",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus", "2"]
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"2"
+							]
 						}
 					},
 					"response": []
@@ -120,9 +153,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/categories",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "categories"]
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
 						}
 					},
 					"response": []
@@ -134,9 +173,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/categories/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "categories", "1"]
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -158,9 +204,15 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/categories",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "categories"]
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
 						}
 					},
 					"response": []
@@ -182,9 +234,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menus/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -196,9 +255,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menus/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menus", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -215,9 +281,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menu_categories",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menu_categories"]
+							"path": [
+								"api",
+								"v1",
+								"menu_categories"
+							]
 						}
 					},
 					"response": []
@@ -229,9 +301,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/menu_categories/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menu_categories", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menu_categories",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -258,9 +337,15 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menu_categories",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menu_categories"]
+							"path": [
+								"api",
+								"v1",
+								"menu_categories"
+							]
 						}
 					},
 					"response": []
@@ -287,9 +372,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menu_categories/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menu_categories", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menu_categories",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -305,9 +397,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/menu_categories/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "menu_categories", "1"]
+							"path": [
+								"api",
+								"v1",
+								"menu_categories",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -324,9 +423,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/line_items",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "line_items"]
+							"path": [
+								"api",
+								"v1",
+								"line_items"
+							]
 						}
 					},
 					"response": []
@@ -338,9 +443,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/line_items/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "line_items", "1"]
+							"path": [
+								"api",
+								"v1",
+								"line_items",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -355,26 +467,32 @@
 							"urlencoded": [
 								{
 									"key": "menu_id",
-									"value": "1",
+									"value": "2",
 									"type": "text"
 								},
 								{
 									"key": "order_id",
-									"value": "1",
+									"value": "2",
 									"type": "text"
 								},
 								{
 									"key": "quantity",
-									"value": "4",
+									"value": "2",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/line_items",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "line_items"]
+							"path": [
+								"api",
+								"v1",
+								"line_items"
+							]
 						}
 					},
 					"response": []
@@ -406,9 +524,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/line_items/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "line_items", "1"]
+							"path": [
+								"api",
+								"v1",
+								"line_items",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -420,9 +545,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/line_items/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "line_items", "1"]
+							"path": [
+								"api",
+								"v1",
+								"line_items",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -439,9 +571,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/orders",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "orders"]
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
 						}
 					},
 					"response": []
@@ -453,9 +591,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/orders/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "orders", "1"]
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -470,16 +615,22 @@
 							"urlencoded": [
 								{
 									"key": "customer_id",
-									"value": "1",
+									"value": "2",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/orders",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "orders"]
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
 						}
 					},
 					"response": []
@@ -501,9 +652,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/orders/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "orders", "1"]
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -515,9 +673,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/orders/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "orders", "1"]
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -534,9 +699,15 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/customers",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "customers"]
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
 						}
 					},
 					"response": []
@@ -548,9 +719,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/customers/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "customers", "1"]
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -565,16 +743,22 @@
 							"urlencoded": [
 								{
 									"key": "email",
-									"value": "ucok@gmail.com",
+									"value": "mujakir@gmail.com",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/customers",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "customers"]
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
 						}
 					},
 					"response": []
@@ -596,9 +780,16 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/v1/customers/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "customers", "1"]
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -610,9 +801,16 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/customers/1",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "customers", "1"]
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -629,9 +827,98 @@
 						"header": [],
 						"url": {
 							"raw": "localhost:3000/api/v1/reports",
-							"host": ["localhost"],
+							"host": [
+								"localhost"
+							],
 							"port": "3000",
-							"path": ["api", "v1", "reports"]
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/reports?email=mujakir@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "mujakir@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by total price (greater than)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/reports?total_price=12500",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "total_price",
+									"value": "12500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by date range",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/reports/?start_date=22-04-2022&end_date=23-04-2022",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"reports",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "22-04-2022"
+								},
+								{
+									"key": "end_date",
+									"value": "23-04-2022"
+								}
+							]
 						}
 					},
 					"response": []
@@ -644,14 +931,18 @@
 			"listen": "prerequest",
 			"script": {
 				"type": "text/javascript",
-				"exec": [""]
+				"exec": [
+					""
+				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
 				"type": "text/javascript",
-				"exec": [""]
+				"exec": [
+					""
+				]
 			}
 		}
 	],

@@ -12,6 +12,13 @@ class Order < ApplicationRecord
   validates :status, presence: true, inclusion: { in: [NEW, PAID, CANCELLED] }
 
   after_initialize :set_defaults
+  before_save :cancel_if_unpaid
+
+  def cancel_if_unpaid
+    return unless order_date.today? && order_date.hour < 17
+
+    update!(status: CANCELLED)
+  end
 
   private
 

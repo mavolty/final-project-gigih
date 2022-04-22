@@ -20,7 +20,7 @@ RSpec.describe Menu, type: :model do
   end
 
   describe 'associations' do
-    it { should have_many(:menu_categories) }
+    it { should have_many(:menu_categories).dependent(:destroy) }
     it { should have_many(:categories).through(:menu_categories) }
   end
 end

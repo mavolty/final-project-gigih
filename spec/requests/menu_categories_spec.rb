@@ -44,4 +44,21 @@ RSpec.describe "MenuCategories", type: :request do
       end
     end
   end
+
+  describe 'POST /api/v1/menu_categories' do
+    let(:valid_attributes) { { menu_id: menu_id, category_id: category_id } }
+
+    context 'when the request is valid' do
+      before { post '/api/v1/menu_categories', params: valid_attributes }
+
+      it 'creates a menu_category' do
+        expect(json['menu_id']).to eq(menu_id)
+        expect(json['category_id']).to eq(category_id)
+      end
+
+      it 'returns status code 201' do
+        expect(response).to have_http_status(201)
+      end
+    end
+  end
  end

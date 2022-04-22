@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :menu_categories, only: %i[index create update destroy]
       get 'menu_categories/:menu_id', to: 'menu_categories#show'
       resources :customers, only: %i[index show create update destroy]
+      resources :orders, only: %i[index show create update destroy]
     end
   end
 end

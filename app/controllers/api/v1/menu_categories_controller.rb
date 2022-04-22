@@ -32,6 +32,12 @@ module Api
         render json: @menu_category, status: :ok
       end
 
+      def destroy
+        @menu_category = MenuCategory.find(params[:id])
+        @menu_category.destroy
+        head :no_content
+      end
+
       private
 
       def menu_category_params

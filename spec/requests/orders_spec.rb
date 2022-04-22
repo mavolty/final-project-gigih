@@ -51,7 +51,7 @@ RSpec.describe 'Orders', type: :request do
       before { post '/api/v1/orders', params: valid_attributes }
 
       it 'creates a order' do
-        expect(json['status']).to eq('new')
+        expect(json['customer_id']).to eq(1)
       end
 
       it 'returns status code 201' do

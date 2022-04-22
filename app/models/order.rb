@@ -17,7 +17,7 @@ class Order < ApplicationRecord
   def cancel_if_unpaid
     return unless order_date.today? && order_date.hour < 17
 
-    update!(status: CANCELLED)
+    update(customer_id: nil, status: CANCELLED)
   end
 
   private

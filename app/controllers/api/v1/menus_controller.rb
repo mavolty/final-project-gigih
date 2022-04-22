@@ -26,6 +26,12 @@ module Api
         head :no_content
       end
 
+      def destroy
+        @menu = Menu.find(params[:id])
+        @menu.destroy
+        head :no_content
+      end
+
       private
 
       def menu_params

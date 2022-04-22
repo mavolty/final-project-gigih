@@ -90,4 +90,12 @@ RSpec.describe 'Menus API', type: :request do
       end
     end
   end
+
+  describe 'DELETE /api/v1/menus/:id' do
+    before { delete "/api/v1/menus/#{menu_id}" }
+
+    it 'returns status code 204' do
+      expect(response).to have_http_status(204)
+    end
+  end
 end

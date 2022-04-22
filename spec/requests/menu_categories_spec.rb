@@ -60,5 +60,17 @@ RSpec.describe "MenuCategories", type: :request do
         expect(response).to have_http_status(201)
       end
     end
+
+    context 'when the request is invalid' do
+      before { post '/api/v1/menu_categories', params: { menu_id: menu_id, category_id: 'invalid-id' } }
+
+      it 'returns status code 422' do
+        expect(response).to have_http_status(422)
+      end
+
+      it 'returns a validation failure message' do
+        expect(response.body).to match(/Validation failed/)
+      end
+    end
   end
  end

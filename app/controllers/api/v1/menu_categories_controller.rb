@@ -17,9 +17,12 @@ module Api
         @menu = Menu.find(params[:menu_id])
         @category = Category.find(params[:category_id])
         @menu_category = MenuCategory.new(menu: @menu, category: @category)
-
-        if @menu_category.save
+        
+        if !@menu.categories.include?(@category)
+          @menu_category.save
           render json: @menu_category, status: :created
+        else
+          render json: { error: 'Category already exists' }, status: :unprocessable_entity
         end
       end
     end

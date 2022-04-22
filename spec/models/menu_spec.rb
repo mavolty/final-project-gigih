@@ -23,5 +23,6 @@ RSpec.describe Menu, type: :model do
     it { should have_many(:menu_categories).dependent(:destroy) }
     it { should have_many(:categories).through(:menu_categories) }
     it { should have_many(:line_items).dependent(:destroy) }
+    it { should have_many(:orders).through(:line_items) }
   end
 end

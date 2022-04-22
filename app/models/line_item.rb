@@ -4,5 +4,5 @@ class LineItem < ApplicationRecord
 
   validates :menu_id, presence: true
   validates :order_id, presence: true
-  validates :quantity, presence: true
+  validates :quantity, presence: true, numericality: { only_integer: true }
 end

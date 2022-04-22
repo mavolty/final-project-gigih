@@ -43,4 +43,20 @@ RSpec.describe 'Orders', type: :request do
       end
     end
   end
+
+  describe 'POST /api/v1/orders' do
+    let(:valid_attributes) { { order_date: Date.today, status: 'new', customer_id: 1 } }
+
+    context 'when the request is valid' do
+      before { post '/api/v1/orders', params: valid_attributes }
+
+      it 'creates a order' do
+        expect(json['status']).to eq('new')
+      end
+
+      it 'returns status code 201' do
+        expect(response).to have_http_status(201)
+      end
+    end
+  end
 end

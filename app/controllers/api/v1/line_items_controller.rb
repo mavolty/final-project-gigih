@@ -37,6 +37,11 @@ module Api
 
         render json: @line_items, status: :ok
       end
+
+      def create
+        @line_item = LineItem.create!(line_item_params)
+        render json: @line_item, status: :created
+      end
     end
   end
 end

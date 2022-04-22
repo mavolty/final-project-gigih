@@ -44,4 +44,20 @@ RSpec.describe 'LineItems', type: :request do
       end
     end
   end
+
+  describe 'POST /api/v1/line_items' do
+    let(:valid_attributes) { { order_id: 1, menu_id: 1, quantity: 1 } }
+
+    context 'when the request is valid' do
+      before { post '/api/v1/line_items', params: valid_attributes }
+
+      it 'creates a line_item' do
+        expect(json['quantity']).to eq(1)
+      end
+
+      it 'returns status code 201' do
+        expect(response).to have_http_status(201)
+      end
+    end
+  end
 end

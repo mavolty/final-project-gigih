@@ -8,7 +8,7 @@ module Api
 
       def show
         @menu = Menu.find(params[:id])
-        render json: @menu
+        render json: @menu, status: :ok
       end
     end
   end

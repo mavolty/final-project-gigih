@@ -55,6 +55,10 @@ RSpec.describe 'Menus API', type: :request do
         expect(json['description']).to eq('My Description')
         expect(json['price']).to eq(5_000.0)
       end
+
+      it 'returns status code 201' do
+        expect(response).to have_http_status(201)
+      end
     end
   end
 end

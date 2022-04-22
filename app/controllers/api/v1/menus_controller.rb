@@ -14,7 +14,7 @@ module Api
       def create
         @menu = Menu.new(menu_params)
         if @menu.save
-          render json: @menu
+          render json: @menu, status: :created
         end
       end
 

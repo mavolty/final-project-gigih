@@ -20,6 +20,9 @@ module Api
 
       def update
         @menu = Menu.find(params[:id])
+
+        return unless LineItem.where(menu_id: @menu.id).empty?
+
         @menu.update(menu_params)
         head :no_content
       end
